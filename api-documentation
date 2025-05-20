@@ -1,0 +1,158 @@
+# API Documentation
+
+## Overview
+This API is designed for managing doctors, patients, and appointment scheduling in a medical context. It provides data on doctors, their specialties, availability, and more.
+
+---
+
+## Endpoints
+
+### `/medicos`
+- **Description:** Returns a list of doctors and their associated data.
+- **Response Structure:**
+
+```json
+{
+  "medicos": [
+    {
+      "id": 1,
+      "medico": "Dr. João",
+      "especialidadeId": 3,
+      "especialidadeNome": "Dermatologia",
+      "crm": "123456",
+      "teleconsulta": true,
+      "telefone": "1234-5678",
+      "apresentacao": "Seja bem-vindo ao meu consultório.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "Universidade XYZ",
+          "ano": "2010"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "Hospital ABC",
+          "ano": "2015"
+        }
+      ],
+      "convenios": [
+        "AMS Petrobrás",
+        "ASSEFAZ",
+        "Amil"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 1,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": false,
+              "agendamentoId": 2,
+              "paciente": "Nome do Paciente Agendado"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
+```
+
+#### Fields
+- `id`: Unique identifier for the doctor.
+- `medico`: Doctor's name.
+- `especialidadeId`: Unique identifier for the specialty.
+- `especialidadeNome`: Name of the specialty.
+- `crm`: Doctor's registration number.
+- `teleconsulta`: Indicates if teleconsultation is available (boolean).
+- `telefone`: Contact phone number.
+- `apresentacao`: Doctor's introduction or bio.
+- `formacao`: Array of education details (title, institution, year).
+- `convenios`: List of accepted health insurance plans.
+- `disponibilidade`: Array of available dates and times, with schedule details.
+
+---
+
+### `/pacientes`
+- **Description:** Returns a list of patients and their details.
+- **Response Structure:**
+
+```json
+{
+  "pacientes": [
+    {
+      "id": 1,
+      "paciente": "Nome do Paciente",
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "convenio": "Unimed",
+      "telefone": "9876-5432",
+      "email": "paciente@exemplo.com"
+    }
+  ]
+}
+```
+
+#### Fields
+- `id`: Unique identifier for the patient.
+- `paciente`: Patient's name.
+- `especialidadeId`: Unique identifier for the specialty.
+- `especialidadeNome`: Name of the specialty related to the patient.
+- `convenio`: Health insurance plan.
+- `telefone`: Contact phone number.
+- `email`: Email address.
+
+---
+
+### `/agendamentos`
+- **Description:** Returns a list of scheduled appointments.
+- **Response Structure:**
+
+```json
+{
+  "agendamentos": [
+    {
+      "id": 1,
+      "medicoId": 1,
+      "pacienteId": 1,
+      "data": "2025-05-20",
+      "horaInicio": "09:00",
+      "horaFim": "09:30",
+      "status": "Confirmado"
+    }
+  ]
+}
+```
+
+#### Fields
+- `id`: Unique identifier for the appointment.
+- `medicoId`: Identifier for the doctor.
+- `pacienteId`: Identifier for the patient.
+- `data`: Appointment date.
+- `horaInicio`: Start time of the appointment.
+- `horaFim`: End time of the appointment.
+- `status`: Status of the appointment (e.g., Confirmed, Canceled).
+
+---
+
+## Notes
+- All date and time values follow the `YYYY-MM-DD` and `HH:MM` formats respectively.
+- Availability (`disponibilidade`) is dynamically updated based on scheduled appointments.
+
+## Error Handling
+- **400 Bad Request:** Missing or invalid parameters.
+- **404 Not Found:** Resource not found.
+- **500 Internal Server Error:** Server-side issue.
+
+---
+
+## Contact
+For any issues or inquiries, contact the API team at `support@apihealth.com`.
