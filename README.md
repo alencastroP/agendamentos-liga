@@ -92,27 +92,62 @@ O projeto utiliza as seguintes tecnologias:
 
 ---
 
-## **Contribuição**
+## 🐳 Instruções para Executar o Projeto com Docker
 
-Sinta-se à vontade para contribuir com melhorias para o projeto. Para isso:
-
-1. **Faça um fork do repositório:**
-   ```bash
-   git checkout -b minha-feature
-   ```
-
-2. **Commit suas alterações:**
-   ```bash
-   git commit -m "Adicionei minha nova feature"
-   ```
-
-3. **Faça push para a branch:**
-   ```bash
-   git push origin minha-feature
-   ```
-
-4. **Abra um Pull Request.**
+Se você deseja executar o projeto utilizando Docker, siga as instruções abaixo:
 
 ---
 
-Agradeço pela sua atenção e fico no aguardo de um retorno! 
+### 1. Instalar o Docker
+
+Certifique-se de que o Docker está instalado em sua máquina. Caso contrário, faça o download e instale-o a partir do [site oficial do Docker](https://www.docker.com/).
+
+---
+
+### 2. Construir a Imagem Docker
+
+Abra um terminal na raiz do seu projeto e execute o seguinte comando para construir a imagem Docker:
+
+```bash
+docker-compose build
+```
+
+---
+
+### 3. Executar o Contêiner
+
+Após a construção da imagem, inicie o contêiner com o comando:
+
+```bash
+docker-compose up
+```
+
+---
+
+### 4. Acessar o Aplicativo
+
+Com o contêiner em execução, abra o navegador e acesse:
+
+```
+http://localhost:3000
+```
+
+Você verá o aplicativo React em execução.
+
+---
+
+### 5. Parar o Contêiner
+
+Para parar o contêiner, pressione `Ctrl + C` no terminal onde o comando `docker-compose up` está em execução.
+
+Se quiser remover os contêineres, execute:
+
+```bash
+docker-compose down
+```
+
+---
+
+Agora você está pronto para rodar o projeto com Docker!
+
+Agradeço desde já pela atenção, qualquer dúvidas me contatar em: pedrovalencastro@outlook.com
