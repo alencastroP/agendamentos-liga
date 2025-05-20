@@ -1,0 +1,807 @@
+{
+  "medicos": [
+    {
+      "id": 1,
+      "medico": "Dr. João",
+      "especialidadeId": 3,
+      "especialidadeNome": "Dermatologia",
+      "crm": "123456",
+      "teleconsulta": true,
+      "telefone": "1234-5678",
+      "apresentacao": "Seja bem-vindo ao meu consultório.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "Universidade XYZ",
+          "ano": "2010"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "Hospital ABC",
+          "ano": "2015"
+        }
+      ],
+      "convenios": [
+        "AMS Petrobrás",
+        "ASSEFAZ",
+        "Amil"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 1,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": false,
+              "agendamentoId": 2,
+              "paciente": "Nome do Paciente Agendado"
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "08:00",
+              "horaFim": "08:30",
+              "disponivel": true,
+              "agendamentoId": 3,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "11:00",
+              "horaFim": "11:30",
+              "disponivel": true,
+              "agendamentoId": 4,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "medico": "Dra. Ana Beatriz",
+      "especialidadeId": 2,
+      "especialidadeNome": "Psicologia",
+      "crm": "654321",
+      "teleconsulta": false,
+      "telefone": "9988-7766",
+      "apresentacao": "Especialista no cuidado infantil com amor e responsabilidade.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UFPE",
+          "ano": "2012"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "IMIP",
+          "ano": "2016"
+        }
+      ],
+      "convenios": [
+        "Unimed",
+        "Bradesco Saúde",
+        "Amil",
+        "ASSEFEZ",
+        "Saúde Caixa"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 5,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 6,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "08:30",
+              "horaFim": "09:00",
+              "disponivel": true,
+              "agendamentoId": 7,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": true,
+              "agendamentoId": 8,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "medico": "Dr. Carlos Eduardo",
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "crm": "112233",
+      "teleconsulta": true,
+      "telefone": "3344-2211",
+      "apresentacao": "Cuidando da saúde do seu coração.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UFRJ",
+          "ano": "2008"
+        },
+        {
+          "titulo": "Especialização",
+          "instituicao": "Instituto do Coração",
+          "ano": "2013"
+        }
+      ],
+      "convenios": [
+        "Amil",
+        "Cassi"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "08:00",
+              "horaFim": "08:30",
+              "disponivel": true,
+              "agendamentoId": 9,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "09:15",
+              "horaFim": "09:45",
+              "disponivel": true,
+              "agendamentoId": 10,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "13:00",
+              "horaFim": "13:30",
+              "disponivel": true,
+              "agendamentoId": 11,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "14:00",
+              "horaFim": "14:30",
+              "disponivel": true,
+              "agendamentoId": 12,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "medico": "Dra. Fernanda Lima",
+      "especialidadeId": 4,
+      "especialidadeNome": "Ortopedia",
+      "crm": "445566",
+      "teleconsulta": false,
+      "telefone": "7788-4455",
+      "apresentacao": "Atendimento humanizado para mulheres em todas as fases da vida.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "USP",
+          "ano": "2011"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "Hospital das Clínicas",
+          "ano": "2014"
+        }
+      ],
+      "convenios": [
+        "Geap Saúde",
+        "SulAmérica"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 13,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "11:00",
+              "horaFim": "11:30",
+              "disponivel": true,
+              "agendamentoId": 14,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 15,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": true,
+              "agendamentoId": 16,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "medico": "Dr. Rafael Tavares",
+      "especialidadeId": 4,
+      "especialidadeNome": "Ortopedia",
+      "crm": "778899",
+      "teleconsulta": true,
+      "telefone": "5566-7788",
+      "apresentacao": "Tratamento moderno e eficaz para dores e lesões musculoesqueléticas.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UFMG",
+          "ano": "2009"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "Hospital Ortopédico",
+          "ano": "2013"
+        }
+      ],
+      "convenios": [
+        "Bradesco Saúde",
+        "Unimed",
+        "Amil"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 17,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 18,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "08:00",
+              "horaFim": "08:30",
+              "disponivel": true,
+              "agendamentoId": 19,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "09:30",
+              "horaFim": "10:00",
+              "disponivel": true,
+              "agendamentoId": 20,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "medico": "Dra. Larissa Soares",
+      "especialidadeId": 5,
+      "especialidadeNome": "Endocrinologia",
+      "crm": "889900",
+      "teleconsulta": true,
+      "telefone": "3322-5566",
+      "apresentacao": "Acompanhamento especializado em diabetes, obesidade e distúrbios hormonais.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "PUC-SP",
+          "ano": "2013"
+        },
+        {
+          "titulo": "Especialização",
+          "instituicao": "Hospital das Clínicas",
+          "ano": "2016"
+        }
+      ],
+      "convenios": [
+        "Cassi",
+        "HapVida",
+        "Unimed"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 21,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "11:00",
+              "horaFim": "11:30",
+              "disponivel": true,
+              "agendamentoId": 22,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 23,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 24,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "medico": "Dr. Marcelo Pinheiro",
+      "especialidadeId": 6,
+      "especialidadeNome": "Neurologia",
+      "crm": "334455",
+      "teleconsulta": false,
+      "telefone": "7766-8899",
+      "apresentacao": "Especialista em distúrbios neurológicos e dores crônicas.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UFRN",
+          "ano": "2007"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "Santa Casa de SP",
+          "ano": "2012"
+        }
+      ],
+      "convenios": [
+        "Amil",
+        "Unimed",
+        "Camed"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:30",
+              "horaFim": "10:00",
+              "disponivel": true,
+              "agendamentoId": 25,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": true,
+              "agendamentoId": 26,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "08:00",
+              "horaFim": "08:30",
+              "disponivel": true,
+              "agendamentoId": 27,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 28,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "medico": "Dra. Camila Freitas",
+      "especialidadeId": 7,
+      "especialidadeNome": "Reumatologia",
+      "crm": "990011",
+      "teleconsulta": true,
+      "telefone": "4433-2211",
+      "apresentacao": "Escuta acolhedora e cuidado com sua saúde mental.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UNIFESP",
+          "ano": "2010"
+        },
+        {
+          "titulo": "Especialização",
+          "instituicao": "Instituto de Psiquiatria",
+          "ano": "2015"
+        }
+      ],
+      "convenios": [
+        "Geap Saúde",
+        "Bradesco Saúde",
+        "ASSEFAZ"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "08:30",
+              "horaFim": "09:00",
+              "disponivel": true,
+              "agendamentoId": 29,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:00",
+              "horaFim": "10:30",
+              "disponivel": true,
+              "agendamentoId": 30,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 31,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "12:30",
+              "horaFim": "13:00",
+              "disponivel": true,
+              "agendamentoId": 32,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "medico": "Dr. Henrique Vasconcelos",
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "crm": "667788",
+      "teleconsulta": false,
+      "telefone": "9988-1122",
+      "apresentacao": "Exames e tratamentos para cuidar da sua visão com excelência.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UFBA",
+          "ano": "2006"
+        },
+        {
+          "titulo": "Residência",
+          "instituicao": "Instituto da Visão",
+          "ano": "2010"
+        }
+      ],
+      "convenios": [
+        "HapVida",
+        "Cassi"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 33,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": true,
+              "agendamentoId": 34,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "08:00",
+              "horaFim": "08:30",
+              "disponivel": true,
+              "agendamentoId": 35,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "11:00",
+              "horaFim": "11:30",
+              "disponivel": true,
+              "agendamentoId": 36,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "medico": "Dra. Roberta Nogueira",
+      "especialidadeId": 7,
+      "especialidadeNome": "Reumatologia",
+      "crm": "221133",
+      "teleconsulta": true,
+      "telefone": "5544-3322",
+      "apresentacao": "Acompanhamento e tratamento de doenças autoimunes e articulares.",
+      "formacao": [
+        {
+          "titulo": "Medicina",
+          "instituicao": "UFPB",
+          "ano": "2014"
+        },
+        {
+          "titulo": "Especialização",
+          "instituicao": "Hospital Sarah Kubitschek",
+          "ano": "2018"
+        }
+      ],
+      "convenios": [
+        "Unimed",
+        "AMS Petrobrás"
+      ],
+      "disponibilidade": [
+        {
+          "data": "2025-05-20",
+          "horarios": [
+            {
+              "horaInicio": "09:00",
+              "horaFim": "09:30",
+              "disponivel": true,
+              "agendamentoId": 33,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "10:30",
+              "horaFim": "11:00",
+              "disponivel": true,
+              "agendamentoId": 34,
+              "paciente": ""
+            }
+          ]
+        },
+        {
+          "data": "2025-05-21",
+          "horarios": [
+            {
+              "horaInicio": "08:00",
+              "horaFim": "08:30",
+              "disponivel": true,
+              "agendamentoId": 35,
+              "paciente": ""
+            },
+            {
+              "horaInicio": "11:00",
+              "horaFim": "11:30",
+              "disponivel": true,
+              "agendamentoId": 36,
+              "paciente": ""
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "pacientes": [
+    {
+      "id": 1,
+      "paciente": "Nome do Paciente",
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "convenioId": 1,
+      "convenioNome": "Unimed",
+      "dataHora": "2025-05-12T09:00:00Z",
+      "medico": "Nome do Médico"
+    },
+    {
+      "id": 2,
+      "paciente": "Nome do Paciente",
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "convenioId": 1,
+      "convenioNome": "Unimed",
+      "dataHora": "2025-05-12T09:00:00Z",
+      "medico": "Nome do Médico"
+    },
+    {
+      "id": "4821",
+      "paciente": "Pedro",
+      "email": "pedrovalencastro@teste.com",
+      "convenio": "Amil",
+      "senha": "senhateste"
+    },
+    {
+      "id": "fd54",
+      "paciente": "Ana Beatriz",
+      "email": "anabea@gmail.com",
+      "convenio": "Amil",
+      "senha": "123"
+    }
+  ],
+  "convenios": [
+    {
+      "id": 1,
+      "nome": "AMS Petrobrás"
+    },
+    {
+      "id": 2,
+      "nome": "ASSEFAZ"
+    },
+    {
+      "id": 3,
+      "nome": "Amil"
+    },
+    {
+      "id": 4,
+      "nome": "Bradesco Saúde"
+    },
+    {
+      "id": 6,
+      "nome": "Camed"
+    },
+    {
+      "id": 7,
+      "nome": "Cassi"
+    },
+    {
+      "id": 8,
+      "nome": "Geap Saúde"
+    },
+    {
+      "id": 9,
+      "nome": "Saúde Caixa"
+    },
+    {
+      "id": 10,
+      "nome": "Unimed"
+    }
+  ],
+  "especialidades": [
+    {
+      "id": 1,
+      "nome": "Cardiologia"
+    },
+    {
+      "id": 2,
+      "nome": "Psicologia"
+    },
+    {
+      "id": 3,
+      "nome": "Dermatologia"
+    },
+    {
+      "id": 4,
+      "nome": "Ortopedia"
+    },
+    {
+      "id": 5,
+      "nome": "Endocrinologia"
+    },
+    {
+      "id": 6,
+      "nome": "Neurologia"
+    },
+    {
+      "id": 7,
+      "nome": "Reumatologia"
+    }
+  ],
+  "atendimentos": [
+    {
+      "id": "8037",
+      "pacienteId": "fd54",
+      "dataAtendimento": "2025-05-20",
+      "hora": "09:00",
+      "medico": "Ana Beatriz",
+      "especialidadeId": 2,
+      "especialidadeNome": "Psicologia"
+    },
+    {
+      "id": "56e3",
+      "pacienteId": "fd54",
+      "dataAtendimento": "2025-05-21",
+      "hora": "14:00",
+      "doctorId": 3,
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "atendido": true
+    },
+    {
+      "id": "a6b1",
+      "pacienteId": "fd54",
+      "dataAtendimento": "2025-05-21",
+      "hora": "14:00",
+      "doctorId": 3,
+      "especialidadeId": 1,
+      "especialidadeNome": "Cardiologia",
+      "atendido": true
+    }
+  ]
+}
